@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Aram</title>
-</head>
-<body>
-    <div id="content" style="font-size: 20px; margin: 20px;"></div>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const key = urlParams.get('key');
-        document.getElementById('content').textContent = key || '';
-    </script>
-</body>
+<script>
+document.write(new URLSearchParams(window.location.search).get('key'));
+</script>
 </html>
